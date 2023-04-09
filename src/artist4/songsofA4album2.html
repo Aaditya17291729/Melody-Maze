@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player</title>
+	<style>
+		/* Container for image and songs */
+		.container {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			background-color: #2c3e50;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+			color: #fff;
+			font-family: Arial, sans-serif;
+		}
+
+		/* Album artwork */
+		.image {
+			flex: 1;
+			margin-right: 20px;
+			height: 100%;
+			max-height: 550px;
+            max-width: 550px;
+			border-radius: 10px;
+			overflow: hidden;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+		}
+
+		.image img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+			transition: transform 0.5s;
+		}
+
+		.image:hover img {
+			transform: scale(1.1);
+		}
+
+		/* Song list */
+		.songs {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			max-height: 400px;
+			overflow-y: auto;
+		}
+
+		/* Individual song */
+		.song {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			margin-bottom: 10px;
+			width: 100%;
+			cursor: pointer;
+			transition: background-color 0.2s;
+		}
+
+		.song:hover {
+			background-color: #34495e;
+		}
+
+		.song audio {
+			margin-right: 10px;
+			background-color: #ecf0f1;
+			padding: 10px;
+			border-radius: 50%;
+			transition: transform 0.2s;
+		}
+
+		.song:hover audio {
+			transform: scale(1.2);
+		}
+
+		.song p {
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			font-weight: bold;
+			flex: 1;
+			text-align: left;
+			transition: color 0.2s;
+		}
+
+		.song p.duration {
+			font-weight: normal;
+			text-align: right;
+			flex: 0;
+		}
+
+		.song:hover p {
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="image">
+			<img src="../images/Raghuvaran-B-Tech-Telugu-2014-500x500.jpg" alt="Album Artwork">
+		</div>
+		<div class="songs">
+			<div class="song">
+				<audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" controls></audio>
+				<p>Song 1</p>
+				<p class="duration">3:30</p>
+			</div>
+			<div class="song">
+				<audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" controls></audio>
+                <p>Song 2</p>
+                <p class="duration">4:15</p>
+            </div>
+            <div class="song">
+                <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" controls></audio>
+                <p>Song 3</p>
+                <p class="duration">2:55</p>
+            </div>
+            <div class="song">
+                <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" controls></audio>
+                <p>Song 4</p>
+                <p class="duration">3:45</p>
+            </div>
+            <div class="song">
+                <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" controls></audio>
+                <p>Song 5</p>
+                <p class="duration">2:20</p>
+            </div>
+            <div class="song">
+                <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3" controls></audio>
+                <p>Song 6</p>
+                <p class="duration">4:05</p>
+            </div>
+            <div class="song">
+                <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3" controls></audio>
+                <p>Song 7</p>
+                <p class="duration">3:10</p>
+            </div>
+            <div class="song">
+                <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" controls></audio>
+                <p>Song 8</p>
+                <p class="duration">2:50</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>    

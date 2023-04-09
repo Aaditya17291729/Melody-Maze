@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player</title>
+	<style>
+		.container {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+
+		.image {
+			flex: 1;
+			margin-right: 20px;
+			height: 500px;
+            width: 500px;
+		}
+
+		.songs {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.song {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			margin-bottom: 10px;
+			width: 100%;
+		}
+
+		.song audio {
+			margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="image">
+			<img src="../images/Aparichithudu-2005-500x500.jpg" alt="Album Artwork" style="width: 100%; height: 100%;">
+		</div>
+		<div class="songs">
+			<div class="song">
+				<audio src="song1.mp3" controls></audio>
+				<p>Song 1</p>
+				<p>3:30</p>
+			</div>
+			<div class="song">
+				<audio src="song2.mp3" controls></audio>
+				<p>Song 2</p>
+				<p>4:10</p>
+			</div>
+			<div class="song">
+				<audio src="song3.mp3" controls></audio>
+				<p>Song 3</p>
+				<p>2:55</p>
+			</div>
+			<div class="song">
+				<audio src="song4.mp3" controls></audio>
+				<p>Song 4</p>
+				<p>5:20</p>
+			</div>
+			<div class="song">
+				<audio src="song5.mp3" controls></audio>
+				<p>Song 5</p>
+				<p>3:45</p>
+			</div>
+			<div class="song">
+				<audio src="song6.mp3" controls></audio>
+				<p>Song 6</p>
+				<p>4:00</p>
+			</div>
+			<div class="song">
+				<audio src="song7.mp3" controls></audio>
+				<p>Song 7</p>
+				<p>3:15</p>
+			</div>
+			<div class="song">
+				<audio src="song8.mp3" controls></audio>
+				<p>Song 8</p>
+				<p>3:50</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
